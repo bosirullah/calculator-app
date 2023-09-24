@@ -1,0 +1,63 @@
+body{
+    background-color: hsl(268, 75%, 9%);
+    color: hsl(52, 100%, 62%)
+}
+
+.switch{
+    background-color: hsl(268, 71%, 12%);
+}
+
+.circle{
+    background-color: hsl(176, 100%, 44%);
+}
+
+.circle:hover{
+    background-color: hsl(177, 86%, 77%);
+}
+
+.container2{
+    background-color: hsl(268, 71%, 12%);
+}
+
+.container3{
+    background-color: hsl(268, 71%, 12%);
+}
+
+.keys{
+    background-color: hsl(268, 47%, 21%);
+    box-shadow:0 3px  hsl(290, 70%, 36%);
+    color: hsl(52, 100%, 62%);
+}
+
+.keys:hover{
+    background-color: hsl(285, 91%, 52%);
+    color: hsl(52, 100%, 62%);
+}
+
+.del-btn{
+    background-color: hsl(281, 89%, 26%);
+    color: #fff;
+    box-shadow:0 3px  hsl(285, 91%, 52%);
+}
+
+.reset-btn{
+    background-color: hsl(281, 89%, 26%);
+    color: #fff;
+    box-shadow:0 3px  hsl(285, 91%, 52%);
+}
+
+.equal-btn{
+    background-color: hsl(176, 100%, 44%);
+    color: #fff;
+    box-shadow: 0 3px hsl(177, 92%, 70%);
+}
+
+.reset-btn:hover,.del-btn:hover{
+    background-color: hsl(285, 83%, 61%);
+    color: #fff;
+}
+
+.equal-btn:hover{
+    background-color: hsl(177, 86%, 77%);
+    color: #fff;
+}

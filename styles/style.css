@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+body{
+    font-family: 'League Spartan', sans-serif;
+}
+
+h1{
+    font-size: 25px;
+    margin: 2rem 0 0 0;
+}
+
+.heading{
+    padding: 0;
+}
+
+.container1{
+    width: 438px;
+    margin: 1.5rem auto 8px;
+    padding: 0;
+}
+
+.theme{
+    text-align: end;
+    margin-top: 39px;
+    font-size: 12px;
+}
+
+.switch{
+    height: 20px;
+    width: 70px;
+    border-radius: 20px;
+    margin-left: 28px;
+}
+
+.switch-mode{
+    margin-top: 14px;
+}
+
+.switch-mode p{
+    margin: 0 0 0 8px;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-left: 23px;
+}
+
+.circle{
+    width: 15px;
+    height: 15px;
+    text-align: start;
+    padding: 6px 0;
+    font-size: 12px;
+    line-height: 1.428571429;
+    border-radius: 15px;
+    margin-bottom: 4.5px;
+    margin-left: 6px;
+    border: none;
+}
+
+.container2{
+    padding: 1% 1%;
+    width: 438px;
+    margin: 0 auto 1rem;
+    height: 10rem;
+    border-radius: 7px;
+}
+
+/* Style for the screen on the right */
+.screen {
+    width: 45%;
+    padding: 10px;
+    height: 100%; /* Ensure it takes full height */
+    font-size: 30px; /* Adjust font size as needed */
+    font-weight: bold; /* Bold text for output */
+    text-align: end;
+    margin: 98px 0 10px 0;
+    align-items: end;
+}
+
+.screen p{
+    margin: 0;
+    overflow-x: auto;
+    max-width: 600px;
+}
+
+.screen-content{
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.container3{
+    padding: 1% 1%;
+    width: 438px;
+    height: 342px;
+    border-radius: 7px;
+}
+
+.row{
+    margin-left: 0.5rem;
+}
+
+.keys{
+    padding: 2% 0;
+    font-size: 30px;
+    text-align: center;
+    margin: 8% 0;
+    width: 80%;
+    height: 2.8rem;
+    border-radius: 7px;
+    box-shadow: 0 3px;
+    border: none;
+}
+
+.col-lg-3,.col-lg-6{
+    padding: 0;
+}
+
+/* Style for the history container on the left */
+.history {
+    width: 50%;
+    height: 100px;
+    color: grey;
+    padding: 10px;
+    height: 100%; /* Ensure it takes full height */
+    font-size: 16px; 
+    align-items: flex-start;
+}  
+
+.history p{
+    margin: 0;
+}
+
+#history-container{
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+    overflow-x: auto;
+    max-height: 130px; /* Set a maximum height relative to the viewport height */
+    align-items: flex-start;
+}
+
+/* Style the scrollbar track (the background) */
+::-webkit-scrollbar {
+    width: 3px; /* Adjust the width of the scrollbar */
+    height: 4px;
+}
+
+/* Style the scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+    background-color: #333; /* Color of the thumb */
+    border-radius: 6px; /* Rounded corners for the thumb */
+}
+
+/* Style the scrollbar track when the mouse hovers over it */
+::-webkit-scrollbar-track:hover {
+    background-color: #666; /* Color of the track on hover */
+}
+
+/* Style the scrollbar thumb when the mouse hovers over it */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Color of the thumb on hover */
+}
+
+.del-btn{
+    border: none;
+}
+
+.reset-btn,.equal-btn{
+    width: 90%;
+    border: none;
+}
+
+@media(min-width: 415px) and (max-width: 477px){
+    .container1{
+        width: 380px;
+    }
+
+    .switch{
+        margin-left: 14px;
+    }
+
+    .switch-mode p{
+        margin-left: 0;
+    }
+
+    .theme{
+        text-align: end;
+    }
+
+    .screen{
+        padding-top: 4.6%;
+        padding-right: 8%;
+    }
+
+    .container2{
+        width: 380px;
+    }
+    
+    .container3{
+        width: 380px; 
+        height: 320px;  
+    }
+}
+
+@media (max-width: 414px){
+    .container1{
+        width: 320px;
+    }
+
+    .switch{
+        margin-left: -1px;
+    }
+
+    .switch-mode p{
+        margin-left: -3px;
+    }
+
+    .theme{
+        text-align: center;
+    }
+
+    .screen{
+        padding-top: 5%;
+        padding-right: 8%;
+    }
+
+    .container2{
+        width: 320px;
+    }
+    
+    .container3{
+        width: 320px; 
+        height: 304px;  
+    }
+}
