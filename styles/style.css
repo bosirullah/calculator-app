@@ -74,6 +74,7 @@ h1{
     text-align: end;
     margin: 98px 0 10px 0;
     align-items: end;
+    overflow-x: auto;
 }
 
 .screen p{

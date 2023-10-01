@@ -64,11 +64,38 @@ keys.forEach((key) => {
     });
 });
 
-// Function to update the screen
+// Function to update the screen with responsive text size and content
 function updateScreen(text) {
     const screen = document.querySelector('.screen span');
     screen.textContent = text || '0'; // Set text to "0" if it's empty or falsy
+
+    // Check if the text width exceeds a threshold
+    const screenWidth = screen.offsetWidth;
+    const thresholdWidth = 120; // Adjust this value as needed
+
+    if (screenWidth > thresholdWidth) {
+        // Calculate a new font size based on the threshold width
+        const fontSize = (thresholdWidth / screenWidth) * 32; // 32px is the default font size
+
+        // Set the new font size
+        screen.style.fontSize = `${fontSize}px`;
+
+        // Check if the text content itself exceeds the screen width
+        if (screen.scrollWidth > screenWidth) {
+            // Reduce the text content and add ellipsis to indicate truncation
+            const content = screen.textContent;
+            let truncatedContent = content;
+            while (screen.scrollWidth > screenWidth && truncatedContent.length > 1) {
+                truncatedContent = truncatedContent.slice(0, -1);
+                screen.textContent = truncatedContent + '...'; // Add ellipsis
+            }
+        }
+    } else {
+        // Reset the font size to the default value
+        screen.style.fontSize = '32px';
+    }
 }
+
 
 
 function calculate() {
